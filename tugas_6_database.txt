@@ -1,0 +1,23 @@
+1.Jalankan MySQL server di xampp
+2.Masuk kedalam folder bin mysql : cd c:/xampp/mysql/bin
+3.Jalankan client server : MYSQL -u root
+
+4.Create database tugas;
+5.use tugas;
+6. create table latihan_1 (
+    -> a INT UNSIGNED PRIMARY KEY AUTO_INCREMENT,
+    -> b VARCHAR(10) DEFAULT "merdeka" NOT NULL)
+    -> ENGINE=MYISAM, CHARACTER SET = ASCII, AUTO_INCREMENT = 100
+7. ALTER TABLE latihan_1 
+    -> ENGINE=INNODB;
+8. ALTER TABLE latihan_1
+    -> CHANGE b c VARCHAR(10) DEFAULT "merdeka" NOT NULL;
+9. ALTER TABLE latihan_1
+    -> ADD b DATE DEFAULT "20180101" AFTER a;
+10. CREATE TABLE latihan_2 LIKE latihan_1;
+11. ALTER TABLE latihan_2
+    -> ENGINE=MEMORY;
+12. ALTER TABLE latihan_2
+    -> RENAME latihan_3;
+13. CREATE TEMPORARY TABLE latihan_4;
+14. DROP TABLE latihan_1,latihan_3,latihan_4;
